@@ -19,5 +19,5 @@ A data dictionary overviewing the tables within the rockbuster database.
 
 
 ### 05 Final Report
-A powerpoint presentation summarizing findings and key insights.  
-An excel file showing the queries that lead to the final recommendations.
+A powerpoint presentation summarizing findings and the visualization that lead to key insights.  
+An excel file showing the queries that lead to the final visualization and tableau links to the public versions.
