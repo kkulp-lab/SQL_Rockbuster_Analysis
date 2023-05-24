@@ -1,0 +1,16 @@
+## A query to find out how many of the top 5 customers are based within each country using a subquery
+
+SELECT AVG(total_amount_paid) as average
+FROM  
+(SELECT A. customer_id, A. first_name, A. last_name, D. country, C. city, SUM(E. amount) as total_amount_paid
+FROM customer A
+INNER JOIN payment E ON A. customer_id = E. customer_id 
+INNER JOIN address B ON A. address_id = B. address_id
+INNER JOIN city C ON B. city_id = C. city_id 
+INNER JOIN country D ON C. country_id = D. country_id
+WHERE city IN ('Aurora','Acua', 'Citrus Heights','Iwaki', 'Ambattur','Shanwei','So Leopoldo', 'Teboksary', 'Tianjin', 'Cianjur')					
+GROUP BY A. customer_id, first_name, last_name,  country,  city
+ORDER BY total_amount_paid DESC
+LIMIT 5 ) AS total_amount_paid
+
+
