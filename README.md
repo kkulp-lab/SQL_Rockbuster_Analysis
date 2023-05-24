@@ -14,6 +14,7 @@ A data dictionary overviewing the tables within the rockbuster database.
 
 ### 03 Scripts 
 
+Scripts that query the data for information relevant to the analysis using CTES, subqueries, and basic functions.
 
 ### 04 Final Report
 A powerpoint presentation summarizing findings and the visualization that lead to key insights.  
